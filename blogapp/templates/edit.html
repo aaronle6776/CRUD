@@ -1,0 +1,14 @@
+<h1>여기는 수정하는 곳입니다.</h1>
+
+<form action="{% url 'update' blog.id %}" >
+ 
+    제목 : <input type="text" name="title" placeholder="제목을 입력하세요" value="{{blog.title}}">
+    <br>
+    글쓴이 : <input type="text" name="writer" placeholder="작성자를 입력하세요" value="{{blog.writer}}">
+    <br>
+    본문 :
+    <br>
+    <textarea name="content" id="" cols="30" rows="10" placeholder="본문을 입력하세요">{{blog.body}}</textarea>
+    <br>
+    <input type="submit">
+</form>
